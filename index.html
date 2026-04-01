@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaan - Portfolio</title>
+    <link rel="shortcut icon" href="amaan.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">Amaan</div>
+
+                <!-- Desktop Menu -->
+                <div class="nav-menu desktop-menu">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="nav-link" data-section="home">Home</a>
+            <a href="#about" class="nav-link" data-section="about">About</a>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-in">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Amaan</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Full Stack Developer & Creative Problem Solver
+                    </p>
+                    <p class="hero-description">
+                        Crafting beautiful, responsive web experiences with modern technologies.
+                        Passionate about clean code and innovative solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="https://wa.me/8923531241?text=Hello!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-outline">
+                            <i data-lucide="message-circle"></i>
+                            WhatsApp Me
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container fade-in">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-glow"></div>
+                        <img src="amaan.jpeg" alt="Amaan" class="hero-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <i data-lucide="chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container-small">
+            <div class="section-header fade-in-scroll">
+                <i data-lucide="user" class="section-icon"></i>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-card fade-in-scroll">
+                <p class="about-text">
+                    I'm a passionate Full Stack Developer with expertise in building modern, responsive web applications.
+                    With a keen eye for design and a love for clean code, I transform ideas into digital experiences that
+                    users love.
+                </p>
+                <p class="about-text">
+                    My journey in web development started with HTML, CSS, and JavaScript, and has evolved to include
+                    modern frameworks and libraries. I'm constantly learning and adapting to new technologies to stay
+                    at the forefront of web development.
+                </p>
+                <p class="about-text">
+                    When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
+                    or sharing knowledge with the developer community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container-medium">
+            <div class="section-header fade-in-scroll">
+                <i data-lucide="code" class="section-icon"></i>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card fade-in-scroll" data-delay="0">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95" style="background: #f97316;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in-scroll" data-delay="1">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS3</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90" style="background: #3b82f6;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in-scroll" data-delay="2">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88" style="background: #eab308;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in-scroll" data-delay="3">
+                    <div class="skill-header">
+                        <span class="skill-name">php</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85" style="background: #06b6d4;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in-scroll" data-delay="4">
+                    <div class="skill-header">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92" style="background: #14b8a6;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in-scroll" data-delay="5">
+                    <div class="skill-header">
+                        <span class="skill-name">Hosting</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80" style="background: #22c55e;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container-medium">
+            <div class="section-header fade-in-scroll">
+                <i data-lucide="briefcase" class="section-icon"></i>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in-scroll" data-delay="0">
+                    <div class="project-image">
+                        <img src="img1.png" alt="E-Commerce Platform">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bharat Enginnering Works</h3>
+                        <p class="project-description">
+                            This is a Rice-meal service website that offers many services about the rice meal plant.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-scroll" data-delay="1">
+                    <div class="project-image">
+                        <img src="img2.png" alt="Portfolio Website">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RiceBox Website</h3>
+                        <p class="project-description">
+                            This is a RiceBox website thats provides deliceous food items.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-scroll" data-delay="2">
+                    <div class="project-image">
+                        <img src="img3.png" alt="Task Management App">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Car Dekho website clone</h3>
+                        <p class="project-description">
+                            This website is a clone of Car Dekho website that provides many services about the car.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container-small">
+            <div class="contact-content fade-in-scroll">
+                <h2 class="section-title-center">Let's Work Together</h2>
+                <p class="section-subtitle-center">
+                    Have a project in mind? Let's discuss how we can make it happen.
+                </p>
+
+                <div class="contact-links">
+                    <a href="https://wa.me/8923531241?text=Hello!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link whatsapp">
+                        <i data-lucide="message-circle"></i>
+                        <p>WhatsApp</p>
+                    </a>
+
+                    <a href="mailto:amaan.web.developer.8791@gmail.com" class="contact-link email">
+                        <i data-lucide="mail"></i>
+                        <p>Email</p>
+                    </a>
+
+                    <a href="https://github.com/amaan719" target="_blank" rel="noopener noreferrer" class="contact-link github">
+                        <i data-lucide="github"></i>
+                        <p>GitHub</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/er-amaan-engeneer-63ab83304?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-link linkedin">
+                        <i data-lucide="linkedin"></i>
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3 class="form-title">Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" class="form-input" required>
+                            <input type="email" placeholder="Your Email" class="form-input" required>
+                        </div>
+                        <input type="text" placeholder="Subject" class="form-input" required>
+                        <textarea placeholder="Your Message" rows="5" class="form-textarea" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Amaan. All rights reserved.</p>
+                <p>Built with HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8923531241?text=Hello!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+       target="_blank"
+       rel="noopener noreferrer"
+       class="whatsapp-float"
+       id="whatsappFloat">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
